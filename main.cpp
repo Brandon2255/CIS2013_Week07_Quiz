@@ -43,7 +43,7 @@ void addName(ifstream& inStream)
 {
 
 	char next;
-	int A = 0 , aLower = 0 , F = 0 , b = 0 , total = 1;
+	int A = 0 , aLower = 0 , F = 0 , b = 0 , total = 0;
 	
 	
 	inStream.get(next);
@@ -74,9 +74,9 @@ void addName(ifstream& inStream)
 		//outStream << next;
 		inStream.get(next);
 	}
-	cout << "There are upper case A's " << A << endl;
-	cout << "There are lower case a's" << aLower << endl;
-	cout << "There are lower case F's " << F << endl;
-	cout << "There are lower case b's " << b << endl;
+	cout << "There are " << A << " upper case A's " << endl;
+	cout << "There are " << aLower << " lower case a's" << endl;
+	cout << "There are " << F << " lower case F's " << endl;
+	cout << "There are " << b << " lower case b's " << endl;
 	cout << "There are " << total << " characters\n";
 }
